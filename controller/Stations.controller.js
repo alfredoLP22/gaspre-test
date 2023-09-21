@@ -7,8 +7,8 @@ const getStations = (req, res) => {
     SELECT
       s.name AS Nombre,
       sc.distance AS Distancia,
-      p.value,
-      b.name
+      p.value AS Precio,
+      b.name AS Marca
   FROM
       stations AS s
   LEFT JOIN
